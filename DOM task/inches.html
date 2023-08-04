@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>convert centimeter to inches</h1>
+    </head>
+    <body>
+        <label for="number">Centimeter(cm)</label><br><br>
+        <input type="number" id = "input"><br><br>
+        <button type = "submit" onclick="convert()">submit </button>
+        <p id="result">Inches</p>
+        <script>
+       function convert(){
+            const a = document.getElementById("input").value;
+            const b = a/2.54;
+            document.getElementById("result").innerHTML = b.toFixed(2)+ "    "+ "Inches";}
+          </script>
+    </body>
+</html>
